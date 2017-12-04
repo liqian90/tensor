@@ -1,9 +1,8 @@
 package com.ai.model;
 
 import java.util.Date;
-
 /**
- * Created by nowcoder on 2016/7/3.
+ * Created by qian on 2017/12/4.
  */
 public class LoginTicket {
     private int id;

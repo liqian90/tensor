@@ -1,7 +1,7 @@
 package com.ai.model;
 
 /**
- * Created by nowcoder on 2016/6/26.
+ * Created by qian on 2017/12/4.
  */
 public class User {
     private int id;

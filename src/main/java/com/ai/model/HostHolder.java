@@ -3,7 +3,7 @@ package com.ai.model;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by nowcoder on 2016/7/3.
+ * Created by qian on 2017/12/4.
  */
 @Component
 public class HostHolder {
