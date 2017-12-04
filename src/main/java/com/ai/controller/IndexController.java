@@ -41,22 +41,6 @@ public class IndexController {
         return String.format("GID{%s},UID{%d},TYPE{%d},KEY{%s}", groupId, userId, type, key);
     }
 
-    @RequestMapping(value = {"/vm"})
-    public String news(Model model) {
-        model.addAttribute("value1", "vv1");
-        List<String> colors = Arrays.asList(new String[]{"RED", "GREEN", "BLUE"});
-
-        Map<String, String> map = new HashMap<String, String>();
-        for (int i = 0; i < 4; ++i) {
-            map.put(String.valueOf(i), String.valueOf(i * i));
-        }
-
-        model.addAttribute("colors", colors);
-        model.addAttribute("map", map);
-        model.addAttribute("user", new User("Jim"));
-
-        return "news";
-    }
 
     @RequestMapping(value = {"/request"})
     @ResponseBody
