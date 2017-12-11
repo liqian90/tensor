@@ -1,6 +1,7 @@
 package com.ai.controller;
 
 import com.ai.model.HostHolder;
+import com.ai.model.News;
 import com.ai.model.ViewObject;
 import com.ai.service.NewsService;
 import com.ai.service.UserService;

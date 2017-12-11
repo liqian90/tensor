@@ -5,6 +5,7 @@ import com.ai.dao.LoginTicketDAO;
 import com.ai.dao.NewsDAO;
 import com.ai.dao.UserDAO;
 import com.ai.model.LoginTicket;
+import com.ai.model.News;
 import com.ai.model.User;
 import org.junit.Assert;
 import org.junit.Test;
