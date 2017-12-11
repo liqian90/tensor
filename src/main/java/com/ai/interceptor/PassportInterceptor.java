@@ -1,4 +1,4 @@
-package com.ai.aspect;
+package com.ai.interceptor;
 
 import com.ai.dao.LoginTicketDAO;
 import com.ai.dao.UserDAO;

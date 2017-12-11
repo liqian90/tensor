@@ -1,4 +1,4 @@
-package com.ai.aspect;
+package com.ai.interceptor;
 
 import com.ai.model.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
