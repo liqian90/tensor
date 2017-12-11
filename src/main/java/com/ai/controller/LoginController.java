@@ -1,7 +1,7 @@
 package com.ai.controller;
 
 import com.ai.service.UserService;
-import com.ai.util.ToutiaoUtil;
+import com.ai.util.TensorUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,14 +38,14 @@ public class LoginController {
                     cookie.setMaxAge(3600*24*5);
                 }
                 response.addCookie(cookie);
-                return ToutiaoUtil.getJSONString(0, "注册成功");
+                return TensorUtil.getJSONString(0, "注册成功");
             } else {
-                return ToutiaoUtil.getJSONString(1, map);
+                return TensorUtil.getJSONString(1, map);
             }
 
         } catch (Exception e) {
             logger.error("注册异常" + e.getMessage());
-            return ToutiaoUtil.getJSONString(1, "注册异常");
+            return TensorUtil.getJSONString(1, "注册异常");
         }
     }
 
@@ -62,14 +62,14 @@ public class LoginController {
                 if (rememberme > 0) {
                     cookie.setMaxAge(3600*24*5);
                 }
-                return ToutiaoUtil.getJSONString(0, "登录成功");
+                return TensorUtil.getJSONString(0, "登录成功");
             } else {
-                return ToutiaoUtil.getJSONString(1, map);
+                return TensorUtil.getJSONString(1, map);
             }
 
         } catch (Exception e) {
             logger.error("登录异常" + e.getMessage());
-            return ToutiaoUtil.getJSONString(1, "登录异常");
+            return TensorUtil.getJSONString(1, "登录异常");
         }
     }
 

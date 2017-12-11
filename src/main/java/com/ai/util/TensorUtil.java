@@ -10,8 +10,8 @@ import java.util.Map;
 /**
  * Created by nowcoder on 2016/7/3.
  */
-public class ToutiaoUtil {
-    private static final Logger logger = LoggerFactory.getLogger(ToutiaoUtil.class);
+public class TensorUtil {
+    private static final Logger logger = LoggerFactory.getLogger(TensorUtil.class);
 
     public static String getJSONString(int code) {
         JSONObject json = new JSONObject();

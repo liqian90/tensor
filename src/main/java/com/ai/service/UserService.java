@@ -4,7 +4,7 @@ import com.ai.model.User;
 import com.ai.dao.LoginTicketDAO;
 import com.ai.dao.UserDAO;
 import com.ai.model.LoginTicket;
-import com.ai.util.ToutiaoUtil;
+import com.ai.util.TensorUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,7 +50,7 @@ public class UserService {
         user.setSalt(UUID.randomUUID().toString().substring(0, 5));
         String head = String.format("http://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000));
         user.setHeadUrl(head);
-        user.setPassword(ToutiaoUtil.MD5(password+user.getSalt()));
+        user.setPassword(TensorUtil.MD5(password+user.getSalt()));
         userDAO.addUser(user);
 
         // 登陆
@@ -79,7 +79,7 @@ public class UserService {
             return map;
         }
 
-        if (!ToutiaoUtil.MD5(password+user.getSalt()).equals(user.getPassword())) {
+        if (!TensorUtil.MD5(password+user.getSalt()).equals(user.getPassword())) {
             map.put("msgpwd", "密码不正确");
             return map;
         }
