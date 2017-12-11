@@ -1,6 +1,5 @@
 package com.ai.dao;
 
-import com.ai.model.News;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
